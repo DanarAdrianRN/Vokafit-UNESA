@@ -25,10 +25,10 @@ const BookingPanel: React.FC = () => {
           </div>
           <div>
             <h2 className="text-xl font-bold text-gray-900">
-              Quick Book Session
+              Booking Cepat Sesi
             </h2>
             <p className="text-sm text-gray-500">
-              Reserve your spot in the gym instantly
+              Pesan jadwal gym Anda dengan cepat dan mudah
             </p>
           </div>
         </div>
@@ -37,7 +37,7 @@ const BookingPanel: React.FC = () => {
           {/* Date Selection */}
           <div className="space-y-1.5">
             <label className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
-              Date
+              Tanggal
             </label>
             <div className="relative">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-400">
@@ -55,7 +55,7 @@ const BookingPanel: React.FC = () => {
           {/* Time Selection */}
           <div className="space-y-1.5">
             <label className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
-              Time
+              Waktu
             </label>
             <div className="relative">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-400">
@@ -66,14 +66,14 @@ const BookingPanel: React.FC = () => {
                 onChange={(e) => setSelectedTime(e.target.value)}
                 className="block w-full pl-10 pr-10 py-2.5 border border-gray-200 rounded-xl text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent sm:text-sm appearance-none bg-white transition-shadow"
               >
-                <option value="08:00">08:00 AM</option>
-                <option value="09:00">09:00 AM</option>
-                <option value="10:00">10:00 AM</option>
-                <option value="11:00">11:00 AM</option>
-                <option value="13:00">01:00 PM</option>
-                <option value="14:00">02:00 PM</option>
-                <option value="15:00">03:00 PM</option>
-                <option value="16:00">04:00 PM</option>
+                <option value="08:00">08:00</option>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
               </select>
             </div>
           </div>
@@ -81,7 +81,7 @@ const BookingPanel: React.FC = () => {
           {/* Room Selection */}
           <div className="space-y-1.5">
             <label className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
-              Facility
+              Fasilitas
             </label>
             <div className="relative">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-400">
@@ -104,7 +104,7 @@ const BookingPanel: React.FC = () => {
           {/* Capacity/People */}
           <div className="space-y-1.5">
             <label className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
-              People
+              Jumlah Orang
             </label>
             <div className="relative">
               <input
@@ -121,7 +121,7 @@ const BookingPanel: React.FC = () => {
 
         <div className="mt-6 pt-6 border-t border-gray-100 flex justify-end">
           <button className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-xl text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 shadow-lg shadow-primary-500/30 transition-all hover:-translate-y-0.5">
-            Check Availability
+            Cek Ketersediaan
             <ArrowRight01Icon className="ml-2 -mr-1 h-5 w-5" />
           </button>
         </div>

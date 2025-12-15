@@ -16,10 +16,10 @@ const ProfilePage: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-3xl font-bold text-gray-900 mb-8">My Profile</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mb-8">Profil Saya</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Left Column - Profile Card */}
+          {/* Kolom Kiri - Kartu Profil */}
           <div className="md:col-span-1">
             <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden sticky top-24">
               <div className="h-32 bg-gradient-to-r from-primary-500 to-primary-600 relative">
@@ -54,19 +54,19 @@ const ProfilePage: React.FC = () => {
                 <nav className="space-y-1">
                   <button className="w-full flex items-center gap-3 px-4 py-3 text-sm font-medium text-primary-700 bg-primary-50 rounded-xl transition-colors">
                     <UserCircleIcon size={20} />
-                    Personal Information
+                    Informasi Pribadi
                   </button>
                   <button className="w-full flex items-center gap-3 px-4 py-3 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 rounded-xl transition-colors">
                     <SecurityCheckIcon size={20} />
-                    Security
+                    Keamanan
                   </button>
                   <button className="w-full flex items-center gap-3 px-4 py-3 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 rounded-xl transition-colors">
                     <Notification03Icon size={20} />
-                    Notifications
+                    Notifikasi
                   </button>
                   <button className="w-full flex items-center gap-3 px-4 py-3 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 rounded-xl transition-colors">
                     <Settings02Icon size={20} />
-                    Settings
+                    Pengaturan
                   </button>
                 </nav>
               </div>
@@ -74,29 +74,29 @@ const ProfilePage: React.FC = () => {
               <div className="border-t border-gray-100 p-4">
                 <button className="w-full flex items-center gap-3 px-4 py-3 text-sm font-medium text-red-600 hover:bg-red-50 rounded-xl transition-colors">
                   <Logout03Icon size={20} />
-                  Sign Out
+                  Keluar
                 </button>
               </div>
             </div>
           </div>
 
-          {/* Right Column - Details */}
+          {/* Kolom Kanan - Detail */}
           <div className="md:col-span-2 space-y-6">
-            {/* Personal Info Section */}
+            {/* Informasi Pribadi */}
             <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
               <div className="flex justify-between items-center mb-6">
                 <h3 className="text-lg font-bold text-gray-900">
-                  Personal Information
+                  Informasi Pribadi
                 </h3>
                 <button className="text-sm font-medium text-primary-600 hover:text-primary-700">
-                  Edit
+                  Ubah
                 </button>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
-                    Full Name
+                    Nama Lengkap
                   </label>
                   <div className="p-3 bg-gray-50 rounded-xl text-gray-900 text-sm font-medium border border-gray-100">
                     {userProfile.name}
@@ -105,7 +105,7 @@ const ProfilePage: React.FC = () => {
 
                 <div className="space-y-2">
                   <label className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
-                    Role
+                    Peran
                   </label>
                   <div className="p-3 bg-gray-50 rounded-xl text-gray-900 text-sm font-medium border border-gray-100">
                     {userProfile.role}
@@ -114,7 +114,7 @@ const ProfilePage: React.FC = () => {
 
                 <div className="space-y-2">
                   <label className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
-                    Email Address
+                    Alamat Email
                   </label>
                   <div className="p-3 bg-gray-50 rounded-xl text-gray-900 text-sm font-medium border border-gray-100 flex items-center gap-2">
                     <Mail01Icon size={16} className="text-gray-400" />
@@ -124,7 +124,7 @@ const ProfilePage: React.FC = () => {
 
                 <div className="space-y-2">
                   <label className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
-                    Phone Number
+                    Nomor Telepon
                   </label>
                   <div className="p-3 bg-gray-50 rounded-xl text-gray-900 text-sm font-medium border border-gray-100 flex items-center gap-2">
                     <Call02Icon size={16} className="text-gray-400" />
@@ -134,7 +134,7 @@ const ProfilePage: React.FC = () => {
 
                 <div className="sm:col-span-2 space-y-2">
                   <label className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
-                    Department
+                    Departemen
                   </label>
                   <div className="p-3 bg-gray-50 rounded-xl text-gray-900 text-sm font-medium border border-gray-100 flex items-center gap-2">
                     <Building03Icon size={16} className="text-gray-400" />
@@ -144,14 +144,14 @@ const ProfilePage: React.FC = () => {
               </div>
             </div>
 
-            {/* Stats Section */}
+            {/* Statistik */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
                 <div className="text-3xl font-bold text-primary-600 mb-1">
                   12
                 </div>
                 <div className="text-xs text-gray-500 font-medium uppercase tracking-wide">
-                  Sessions Completed
+                  Sesi Selesai
                 </div>
               </div>
               <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
@@ -159,7 +159,7 @@ const ProfilePage: React.FC = () => {
                   4
                 </div>
                 <div className="text-xs text-gray-500 font-medium uppercase tracking-wide">
-                  Upcoming Bookings
+                  Pemesanan Mendatang
                 </div>
               </div>
               <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
@@ -167,7 +167,7 @@ const ProfilePage: React.FC = () => {
                   2
                 </div>
                 <div className="text-xs text-gray-500 font-medium uppercase tracking-wide">
-                  Events Registered
+                  Event Terdaftar
                 </div>
               </div>
             </div>

@@ -22,9 +22,9 @@ const ScheduleList: React.FC = () => {
     <div className="space-y-6">
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
         <div>
-          <h2 className="text-2xl font-bold text-gray-900">Today's Classes</h2>
+          <h2 className="text-2xl font-bold text-gray-900">Kelas Hari Ini</h2>
           <p className="text-gray-500">
-            Join a group session led by expert instructors
+            Ikuti sesi kelompok yang dipandu oleh instruktur profesional
           </p>
         </div>
 
@@ -40,7 +40,7 @@ const ScheduleList: React.FC = () => {
                   : "text-gray-500 hover:text-gray-700 hover:bg-gray-100"
               )}
             >
-              {cat}
+              {cat === "All" ? "Semua" : cat}
             </button>
           ))}
         </div>
@@ -76,7 +76,9 @@ const ScheduleList: React.FC = () => {
                       : "bg-red-100 text-red-700"
                   )}
                 >
-                  {item.spotsLeft > 0 ? `${item.spotsLeft} spots left` : "Full"}
+                  {item.spotsLeft > 0
+                    ? `${item.spotsLeft} slot tersisa`
+                    : "Penuh"}
                 </span>
               </div>
 
@@ -103,7 +105,9 @@ const ScheduleList: React.FC = () => {
                       : "bg-gray-100 text-gray-400 cursor-not-allowed"
                   )}
                 >
-                  {item.spotsLeft > 0 ? "Book Now" : "Join Waitlist"}
+                  {item.spotsLeft > 0
+                    ? "Pesan Sekarang"
+                    : "Masuk Daftar Tunggu"}
                 </button>
               </div>
             </div>

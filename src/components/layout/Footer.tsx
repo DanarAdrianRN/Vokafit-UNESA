@@ -13,6 +13,7 @@ const Footer: React.FC = () => {
     <footer className="bg-secondary-900 text-white pt-12 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          {/* Brand */}
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 bg-primary-500 rounded-lg flex items-center justify-center text-white font-bold text-xl">
@@ -23,14 +24,15 @@ const Footer: React.FC = () => {
               </span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              The official gym booking and sports management platform for
-              Fakultas Vokasi UNESA. Stay fit, stay healthy.
+              Platform resmi pemesanan gym dan manajemen kegiatan olahraga
+              Fakultas Vokasi UNESA. Tetap bugar, tetap sehat.
             </p>
           </div>
 
+          {/* Quick Links */}
           <div>
             <h3 className="text-lg font-semibold mb-4 text-white">
-              Quick Links
+              Tautan Cepat
             </h3>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
@@ -38,7 +40,7 @@ const Footer: React.FC = () => {
                   to="/"
                   className="hover:text-primary-400 transition-colors"
                 >
-                  Book a Session
+                  Pesan Sesi
                 </Link>
               </li>
               <li>
@@ -46,7 +48,7 @@ const Footer: React.FC = () => {
                   to="/classes"
                   className="hover:text-primary-400 transition-colors"
                 >
-                  Class Schedule
+                  Jadwal Kelas
                 </Link>
               </li>
               <li>
@@ -54,7 +56,7 @@ const Footer: React.FC = () => {
                   to="/events"
                   className="hover:text-primary-400 transition-colors"
                 >
-                  Sports Events
+                  Event Olahraga
                 </Link>
               </li>
               <li>
@@ -62,21 +64,22 @@ const Footer: React.FC = () => {
                   href="#"
                   className="hover:text-primary-400 transition-colors"
                 >
-                  Facility Map
+                  Peta Fasilitas
                 </a>
               </li>
             </ul>
           </div>
 
+          {/* Support */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-white">Support</h3>
+            <h3 className="text-lg font-semibold mb-4 text-white">Bantuan</h3>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
                 <a
                   href="#"
                   className="hover:text-primary-400 transition-colors"
                 >
-                  Help Center
+                  Pusat Bantuan
                 </a>
               </li>
               <li>
@@ -84,7 +87,7 @@ const Footer: React.FC = () => {
                   href="#"
                   className="hover:text-primary-400 transition-colors"
                 >
-                  Terms of Service
+                  Ketentuan Layanan
                 </a>
               </li>
               <li>
@@ -92,7 +95,7 @@ const Footer: React.FC = () => {
                   href="#"
                   className="hover:text-primary-400 transition-colors"
                 >
-                  Privacy Policy
+                  Kebijakan Privasi
                 </a>
               </li>
               <li>
@@ -100,15 +103,16 @@ const Footer: React.FC = () => {
                   href="#"
                   className="hover:text-primary-400 transition-colors"
                 >
-                  Contact Admin
+                  Hubungi Admin
                 </a>
               </li>
             </ul>
           </div>
 
+          {/* Contact */}
           <div>
             <h3 className="text-lg font-semibold mb-4 text-white">
-              Contact Us
+              Kontak Kami
             </h3>
             <div className="space-y-3 text-sm text-gray-400">
               <div className="flex items-center gap-2">
@@ -145,8 +149,8 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
           <p>
-            &copy; {new Date().getFullYear()} Fakultas Vokasi UNESA. All rights
-            reserved.
+            &copy; {new Date().getFullYear()} Fakultas Vokasi UNESA. Seluruh hak
+            cipta dilindungi.
           </p>
         </div>
       </div>

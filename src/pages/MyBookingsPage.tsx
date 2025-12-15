@@ -6,7 +6,7 @@ import clsx from "clsx";
 const MyBookingsPage: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <h1 className="text-3xl font-bold text-gray-900 mb-8">My Bookings</h1>
+      <h1 className="text-3xl font-bold text-gray-900 mb-8">Pemesanan Saya</h1>
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {myBookings.map((booking) => (
@@ -21,6 +21,7 @@ const MyBookingsPage: React.FC = () => {
                 className="w-full h-full object-cover"
               />
             </div>
+
             <div className="p-6">
               <div className="flex justify-between items-start mb-4">
                 <h3 className="text-xl font-bold text-gray-900">
@@ -36,7 +37,11 @@ const MyBookingsPage: React.FC = () => {
                       : "bg-red-100 text-red-700"
                   )}
                 >
-                  {booking.status}
+                  {booking.status === "Confirmed"
+                    ? "Dikonfirmasi"
+                    : booking.status === "Pending"
+                    ? "Menunggu"
+                    : "Dibatalkan"}
                 </span>
               </div>
 
@@ -57,10 +62,10 @@ const MyBookingsPage: React.FC = () => {
 
               <div className="flex gap-3">
                 <button className="flex-1 py-2 border border-gray-200 rounded-xl text-gray-600 font-medium hover:bg-gray-50 transition-colors">
-                  Reschedule
+                  Ubah Jadwal
                 </button>
                 <button className="flex-1 py-2 border border-red-100 text-red-600 rounded-xl font-medium hover:bg-red-50 transition-colors">
-                  Cancel
+                  Batalkan
                 </button>
               </div>
             </div>
@@ -70,9 +75,11 @@ const MyBookingsPage: React.FC = () => {
 
       {myBookings.length === 0 && (
         <div className="text-center py-12">
-          <p className="text-gray-500">You have no upcoming bookings.</p>
+          <p className="text-gray-500">
+            Anda belum memiliki pemesanan yang akan datang.
+          </p>
           <button className="mt-4 text-primary-600 font-medium hover:text-primary-700">
-            Book a session now
+            Pesan sesi sekarang
           </button>
         </div>
       )}

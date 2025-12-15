@@ -12,16 +12,16 @@ const EventCard: React.FC = () => {
     <div className="space-y-6">
       <div className="flex justify-between items-end">
         <div>
-          <h2 className="text-2xl font-bold text-gray-900">Upcoming Events</h2>
+          <h2 className="text-2xl font-bold text-gray-900">Event Mendatang</h2>
           <p className="text-gray-500">
-            Don't miss out on university sports action
+            Jangan lewatkan keseruan event olahraga kampus
           </p>
         </div>
         <Link
           to="/events"
           className="text-primary-600 hover:text-primary-700 text-sm font-medium flex items-center gap-1"
         >
-          View All <ArrowRight01Icon size={16} />
+          Lihat Semua <ArrowRight01Icon size={16} />
         </Link>
       </div>
 
@@ -52,12 +52,13 @@ const EventCard: React.FC = () => {
                 </div>
               </div>
             </div>
+
             <div className="p-4">
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
                 {event.description}
               </p>
               <button className="w-full py-2.5 border border-primary-200 text-primary-600 rounded-xl font-medium hover:bg-primary-50 transition-colors">
-                Register Interest
+                Daftar Minat
               </button>
             </div>
           </div>

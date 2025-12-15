@@ -73,16 +73,16 @@ const NotificationDropdown: React.FC = () => {
                 <div className="p-4 border-b border-gray-100 flex justify-between items-center bg-gray-50/50">
                   <div>
                     <h3 className="text-sm font-bold text-gray-900">
-                      Notifications
+                      Notifikasi
                     </h3>
                     <p className="text-xs text-gray-500">
-                      You have {unreadCount} unread messages
+                      Anda memiliki {unreadCount} pesan belum dibaca
                     </p>
                   </div>
                   {unreadCount > 0 && (
                     <button className="text-xs font-medium text-primary-600 hover:text-primary-700 flex items-center gap-1 transition-colors">
                       <Tick02Icon size={14} />
-                      Mark all read
+                      Tandai semua sudah dibaca
                     </button>
                   )}
                 </div>
@@ -137,7 +137,7 @@ const NotificationDropdown: React.FC = () => {
                         size={48}
                         className="mx-auto text-gray-300 mb-3"
                       />
-                      <p>No notifications yet</p>
+                      <p>Belum ada notifikasi</p>
                     </div>
                   )}
                 </div>
@@ -145,7 +145,7 @@ const NotificationDropdown: React.FC = () => {
                 <div className="p-3 border-t border-gray-100 bg-gray-50/50 text-center">
                   <button className="text-xs font-medium text-gray-500 hover:text-gray-900 transition-colors flex items-center justify-center gap-1 mx-auto w-full py-1">
                     <Delete02Icon size={14} />
-                    Clear all notifications
+                    Hapus semua notifikasi
                   </button>
                 </div>
               </div>
